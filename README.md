@@ -1,2 +1,2 @@
 # manjaro-xfce-example
-Configuration Memorandum for Manjaro(xfce)
+Configuration Memorandum for Manjaro(xfce)s
