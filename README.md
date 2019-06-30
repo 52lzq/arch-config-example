@@ -1,10 +1,10 @@
-# manjaro （xfce版本） 相关配置
+# manjaro （xfce版本） 安装及配置
 
 ## 进度
 基本配置正在填写中...
 
 ## 安装系统
-１.在ｍanjaro官网上选择适合自己的版本进行下载
+1.在ｍanjaro官网上选择适合自己的版本进行下载
 
 2.使用Refus制作U盘启动盘，进入Refus界面后选择对应的iso文件，所有选项默认，点击开始后的对话框选择**以dd镜像模式写入**
 
@@ -71,13 +71,30 @@ export XMODIFIERS="@im=fcitx"
 进行重启 reboot
 此时则可以使用输入法了
 
-如果搜狗输入法频繁出现请删除xx，则可以安装fcitx-qt4来修复搜狗输入法,但在安装
+如果搜狗输入法频繁出现请删除xx，则可以安装fcitx-qt4来修复搜狗输入法
 ~~~
 yay -S fcitx-qt4
 ~~~
-安装完搜狗输入法后可以配置翻墙资源，我采用的是ssr节点形式，这里不便多说，先略过。
+安装完搜狗输入法后可以配置翻墙资源，我采用的是ssr节点形式
+
+- 安装chrome
+~~~
+sudo pacman -S google-chrome 
+~~~
+
+指定chrome在代理端口下运行以便运行chrome的代理插件`Proxy SwitchyOmega`
+~~~
+google-chrome-stable --proxy-server="socks5://127.0.0.1:1080"
+~~~
+
+PS:这里贴上`Proxy SwitchyOmega`插件的规则配置资源网址
+~~~
+https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList
+~~~
 
 此时可以按照自己喜欢设置系统，有一个痛点就是在高分辨率屏幕下字体十分小，可以在设置字体处将字体dpi设置的较高一点。
+
+- 安装
 
 - 安装zsh 
 ~~~
@@ -95,4 +112,75 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ~~~
 我安装不是zsh默认含有的主题，地址在git上，故`git clone https://github.com/caiogondim/bullet-train.zsh`,将下载的主题放置于~/.oh-my-zsh/themes/bullet-train.zsh-theme
 
-安装插件
+- 安装插件
+高亮插件
+~~~
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+~~~
+命令建议和补全
+~~~
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+~~~
+此时可以更改 `~/.zshrc`找到并更改`ZSH_THEME="bullet-train"`更改`plugins=(git zsh-syntax-highlighting zsh-autosuggestions)`
+
+在命令行输入`source ~/.zshrc`以生效
+
+注意：安装上述主题时可能会显示不正确，此时需要安装powerline字体
+
+powerline字体地址
+~~~
+https://github.com/powerline/fonts
+~~~
+可按照上述地址内的ReadMe进行安装字体
+
+- 查看所有安装的字体
+~~~
+fc-list|cut -d: -f2
+~~~
+当安装完字体后如果不显示可更新字体缓存
+- 更新字体缓存
+~~~
+fc-cache -fv
+~~~
+我在终端字体选择的是`Droid Sans Mono for Powerline`
+
+在vscode自带终端下字体选择的是`Menlo for Powerline`
+
+- 安装powerline-vim
+~~~
+sudo pacman -S powerline-vim
+~~~
+然后更改vim配置脚本`vim ~/.vimrc`
+
+~~~js
+let g:powerline_pycmd="py3"
+set laststatus=2
+set t_Co=256
+syntax on
+~~~
+
+- 安装vscode
+~~~
+sudo pacman -S visual-studio-code-bin
+~~~
+此时下载完vscode可以同步vscode设置
+在插件列表中下载Settings Sync
+
+按下 Shift + Alt + D  
+输入token 在打开的页面中可重复生成token 
+然后查询到自己保存的github gist 进行同步更新
+
+什么？ 你还没有使用这个保存过vscode的设置？稍等我明天更新!
+
+
+- 清除系统中无用的包
+~~~
+sudo pacman -R $(pacman -Qdtq)
+~~~
+
+- 清除已下载的安装包
+~~~
+sudo pacman -Scc
+~~~
+
+
