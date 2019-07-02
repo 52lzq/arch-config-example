@@ -206,3 +206,13 @@ sudo mount /dev/sdb4 /mnt/usb
 ~~~
 sudo umount /mnt/usb
 ~~~
+
+若无法启动蓝牙服务，可卸载默认社区的community/blueman
+~~~
+sudo pacman -Rs blueman
+~~~
+安装aur上的blueman-git
+~~~
+yay -S blueman-git
+~~~
+
