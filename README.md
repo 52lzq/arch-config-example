@@ -170,8 +170,13 @@ sudo pacman -S visual-studio-code-bin
 输入token 在打开的页面中可重复生成token 
 然后查询到自己保存的github gist 进行同步更新
 
-什么？ 你还没有使用这个保存过vscode的设置？稍等我明天更新!
+如果你是第一次使用此插件还没有在github上保存过vscode的设置，可按照下述步骤将当前设置同步保存上去
 
+1. 下载完插件，按下Shift + Alt + U，*PS:如果未生效，请重启vscode或者打开一个文件*在跳出的页面点击 generate new tooken，然后在新的页面里写上token描述，勾选上gist，此时就会生成一个token,输入到vscode输入框中
+
+2. 上传完成后会生成一个gist ID,使用 Shift + Alt + D，输入ID，进行同步，如果ID忘了或者没找到？可以在google一下github gists 然后登陆账号就可以查看到自己所有生成的gists，在对应的那个点击进去的url后缀就是对应的ID
+
+3. 其实在我理解token是相当于判断当前用户属于谁，后面的gists ID是指当前用户底下的哪条gists信息
 
 - 清除系统中无用的包
 ~~~
@@ -183,4 +188,31 @@ sudo pacman -R $(pacman -Qdtq)
 sudo pacman -Scc
 ~~~
 
+若出现无法挂载Ｕ盘情况
+可以输入以下命令查看所有的disk信息
+~~~
+sudo fdisk -l 
+~~~
+
+查看到插入的U盘所属的disk名称例如dev/sdb4
+
+此时就可以挂载U盘到自己的文件系统里进行查看,例如我想将其挂载在 /mnt/usb下，使用以下命令： 
+~~~
+sudo mount /dev/sdb4 /mnt/usb
+~~~
+*PS：若没有此目录，可以sudo mkdir 生成一个文件夹*
+
+解除挂载U盘
+~~~
+sudo umount /mnt/usb
+~~~
+
+若无法启动蓝牙服务，可卸载默认社区的community/blueman
+~~~
+sudo pacman -Rs blueman
+~~~
+安装aur上的blueman-git
+~~~
+yay -S blueman-git
+~~~
 
