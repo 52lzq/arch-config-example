@@ -1,4 +1,4 @@
-# manjaro （xfce版本） 安装及配置
+# arch-i3 配置
 
 ## 进度
 基本配置正在填写中...
@@ -107,4 +107,35 @@ sudo pacman -Rs blueman
 安装aur上的blueman-git
 ~~~
 yay -S blueman-git
+~~~
+
+-避免每次提交github输入密码
+~~~
+git config --global credential.helper store
+~~~
+
+- 显示emoji
+~~~
+sudo pacman -S noto-fonts-emoji
+~~~
+然后修改全局字体配置文件
+~~~
+vim ~/.config/fontconfig
+~~~
+添加
+~~~
+<match target="scan">
+  <test name="family">
+    <string>Noto Color Emoji</string>
+  </test>
+  <edit name="scalable" mode="assign">
+    <bool>true</bool>
+  </edit>
+</match>
+
+<match target="pattern">
+  <edit name="family" mode="prepend">
+    <string>Noto Color Emoji</string>
+  </edit>
+</match>
 ~~~
