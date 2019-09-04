@@ -431,10 +431,10 @@ exec --no-startup-id fcitx
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Updater
-exec --no-startup-id pamac-tray
+# exec --no-startup-id pamac-tray
 
 # bluetooth
-#exec --no-startup-id blueberry-tray
+exec --no-startup-id blueberry-tray
 
 # network
 exec --no-startup-id nm-applet
@@ -453,7 +453,7 @@ exec_always --no-startup-id numlockx on
 exec --no-startup-id volumeicon
 
 #variety
-exec --no-startup-id variety
+# exec --no-startup-id variety
 
 # clipman
 #exec --no-startup-id xfce4-clipman
@@ -482,6 +482,10 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 #conky
 #bindsym $mod+c exec --no-startup-id conky-toggle
+
+bindsym $mod+control+g exec --no-startup-id google-chrome-stable;focus
+bindsym $mod+control+c exec --no-startup-id code .;focus
+bindsym $mod+control+m exec --no-startup-id electron-netease-cloud-music;focus
 
 # terminal
 bindsym $mod+Return exec --no-startup-id termite;focus
@@ -529,11 +533,6 @@ bindsym control+mod1+p exec --no-startup-id pamac-manager
 bindsym --release $mod+Escape exec xkill
 
 #workspace related
-
-bindsym $mod+control+g exec --no-startup-id google-chrome-stable;focus
-bindsym $mod+control+c exec --no-startup-id code .;focus
-bindsym $mod+control+m exec --no-startup-id electron-netease-cloud-music;focus
-
 #workspace 1 related
 bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 #qwerty/azerty conflict with w
@@ -864,12 +863,12 @@ bar {
 
     height 25
     workspace_buttons yes
-    font pango:Noto Sans 14
-
+    font pango:ttf-font-awesome 14
     #position top
-    position bottom
+    position top
 
     #system icons
+    #tray_output primary
     #tray_output none
     #tray_output $firstMonitor
     #tray_output $secondMonitor
