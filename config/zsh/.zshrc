@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/lizq/.oh-my-zsh"
-# export ALL_PROXY=socks5://127.0.0.1:1080
+export ALL_PROXY=socks5://127.0.0.1:1080
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -98,6 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#init nvm
+alias invm='source /usr/share/nvm/init-nvm.sh'
 
 #list
 alias ls='ls --color=auto'
