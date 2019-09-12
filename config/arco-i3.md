@@ -12,6 +12,18 @@
  sudo vim /etc/pacman.d/mirrorlist
 ```
 
+- 安装 vim
+
+```
+pacman -S vim
+```
+
+- 安装 markdown 编辑器
+
+```
+pacman -S typora
+```
+
 添加下述语句在文件最上层
 
 ```
@@ -94,13 +106,37 @@ yay -S fcitx-qt4
 - 安装 chromium
 
 ```
-sudo pacman -S 安装chromium
+sudo pacman -S google-chrome-stable
 ```
 
-指定安装 chromium 在代理端口下运行以便运行安装 chromium 的代理插件`Proxy SwitchyOmega`
+- 安装 electron-netease-cloud-music
 
 ```
-chromium --proxy-server="socks5://127.0.0.1:1080"
+pacman -S electron-netease-cloud-music
+```
+
+- 安装 wps 和 wps 字体
+
+```
+pacman -S ttf-wps-fonts wps-office
+```
+
+- 更新字体缓存
+
+```
+fc-cache -fv
+```
+
+- 安装 ttf-menlo-powerline-git
+
+```
+yay -S ttf-menlo-powerline-git
+```
+
+指定安装 google-chrome-stable 在代理端口下运行以便运行安装 chromium 的代理插件`Proxy SwitchyOmega`
+
+```
+google-chrome-stable --proxy-server="socks5://127.0.0.1:1080"
 ```
 
 PS:这里贴上`Proxy SwitchyOmega`插件的规则配置资源网址
@@ -173,3 +209,40 @@ vim ~/.config/fontconfig
   </edit>
 </match>
 ```
+
+- 安装 zsh
+
+```
+sudo pacman -S zsh
+```
+
+此时可以用`cat /etc/shells`查看所有 shell
+
+更改默认 shell 为 zsh`chsh -s /usr/bin/zsh`
+
+可以用`echo $SHELL`查看当前默认的 shell
+
+- 安装 oh-my-zsh
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+我安装不是 zsh 默认含有的主题，地址在 git 上，故`git clone https://github.com/caiogondim/bullet-train.zsh`,将下载的主题放置于~/.oh-my-zsh/themes/bullet-train.zsh-theme
+
+- 安装插件
+  高亮插件
+
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+命令建议和补全
+
+```
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
+此时可以更改 `~/.zshrc`找到并更改`ZSH_THEME="bullet-train"`更改`plugins=(git zsh-syntax-highlighting zsh-autosuggestions)`
+
+在命令行输入`source ~/.zshrc`以生效
