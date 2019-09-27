@@ -44,7 +44,7 @@ ColorPalette13=#72729f9fcfcf
 ColorPalette14=#adad7f7fa8a8
 ColorPalette15=#3434e2e2e2e2
 ColorPalette16=#eeeeeeeeecec
-ColorPalette=rgb(255,83,112);rgb(255,83,112);rgb(185,245,101);rgb(255,203,107);rgb(247,109,71);rgb(199,146,234);rgb(159,179,213);rgb(255,255,255);rgb(145,162,190);rgb(255,83,112);rgb(185,245,101);rgb(255,203,107);rgb(159,179,213);rgb(199,146,234);rgb(124,168,240);rgb(255,255,255)
+ColorPalette=rgb(0,0,0);rgb(255,83,112);rgb(171,241,73);rgb(255,203,107);rgb(247,109,71);rgb(199,146,234);rgb(124,168,240);rgb(255,255,255);rgb(137,165,207);rgb(255,83,112);rgb(171,241,73);rgb(255,203,107);rgb(183,193,209);rgb(199,146,234);rgb(124,168,240);rgb(255,255,255)
 ColorCursor=#8e8ea2a2c3c3
 ColorBackground=#0f111a
 ColorForeground=#eeeeeeeeecec
@@ -52,5 +52,5 @@ TitleInitial=Terminal
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.800000
-TabActivityColor=#ffffcbcb6b6b
+TabActivityColor=#66668686b6b6
 
