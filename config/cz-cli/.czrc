@@ -1,0 +1,89 @@
+{
+  "path": "cz-emoji",
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    },
+    "cz-emoji": {
+      "types": [
+        {
+          "description": "A new feature",
+          "title": "Features",
+          "name": "feat",
+          "emoji": "✨",
+          "code": "feat: :sparkles: "
+        },
+        {
+          "description": "A bug fix",
+          "title": "Bug Fixes",
+          "name": "fix",
+          "emoji": "🔧",
+          "code": "fix: :wrench: "
+        },
+        {
+          "description": "Changes that do not affect the meaning of the code",
+          "title": "Styles",
+          "name": "style",
+          "emoji": "🎨",
+          "code": "style: :art: "
+        },
+        {
+          "description": "A code change that improves performance",
+          "title": "Performance Improvements",
+          "name": "perf",
+          "emoji": "🚀",
+          "code": "perf: :rocket: "
+        },
+        {
+          "description": "Changes that affect the build system or external dependencies ",
+          "title": "Builds",
+          "name": "build",
+          "emoji": "🏗",
+          "code": "build: :building_construction: "
+        },
+        {
+          "description": "Documentation only changes",
+          "title": "Documentation",
+          "name": "docs",
+          "emoji": "📝",
+          "code": "docs: :pencil: "
+        },
+        {
+          "description": "Adding missing tests or correcting existing tests",
+          "title": "Tests",
+          "name": "test",
+          "emoji": "👷",
+          "code": "test: :construction_worker: "
+        },
+        {
+          "description": "A code change that neither fixes a bug nor adds a feature",
+          "title": "Code Refactoring",
+          "name": "refactor",
+          "emoji": "👍",
+          "code": "refactor: :+1: "
+        },
+        {
+          "description": "Changes to our CI configuration files and scripts ",
+          "title": "Continuous Integrations",
+          "name": "ci",
+          "emoji": "🤖",
+          "code": "ci: :robot: "
+        },
+        {
+          "description": "Other changes that don't modify src or test files",
+          "title": "Chores",
+          "name": "chore",
+          "emoji": "🍺",
+          "code": "chore: :beer: "
+        },
+        {
+          "description": "Reverts a previous commit",
+          "title": "Reverts",
+          "name": "revert",
+          "emoji": "🔙",
+          "code": "revert: :back: "
+        }
+      ]
+    }
+  }
+}
