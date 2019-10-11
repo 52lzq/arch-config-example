@@ -1,0 +1,11 @@
+// Empty
+[
+  {
+    "key": "ctrl+k s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "ctrl+alt+x",
+    "command": "editor.action.transformToUppercase"
+  }
+]

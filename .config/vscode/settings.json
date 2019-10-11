@@ -1,0 +1,53 @@
+{
+  "editor.tabSize": 2,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "'Menlo for Powerline'",
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.ejs": "html"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "search.useRipgrep": false,
+  "minapp-vscode.disableAutoConfig": true,
+  "explorer.confirmDragAndDrop": false,
+  "sync.gist": "",
+  "sync.quietSync": false,
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.rendererType": "dom",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "window.menuBarVisibility": "toggle",
+  "git.enableSmartCommit": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.statusBar.visible": true,
+  "workbench.startupEditor": "welcomePage",
+  "window.zoomLevel": 1,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontSize": 15,
+  "workbench.colorTheme": "Sublime Material Theme - Dark",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.jediEnabled": false,
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "update.mode": "none",
+  "extensions.autoUpdate": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "npm.fetchOnlinePackageInfo": false,
+  "editor.fontFamily": "'Menlo for Powerline','Droid Sans Mono', 'monospace'",
+  "sync.forceUpload": true,
+  "sync.code": "4/sAHqewSevM97A6486zyiyoy-_hBJvgxta7N-3Y9LMSz1eHi0QF9GpZY"
+}
