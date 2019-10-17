@@ -9,7 +9,8 @@ export ALL_PROXY=socks5://127.0.0.1:1080
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# kennethreitz sorin
+ZSH_THEME="kennethreitz"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -103,8 +104,8 @@ source $ZSH/oh-my-zsh.sh
 alias invm='source /usr/share/nvm/init-nvm.sh'
 
 #list
-alias ls='ls --color=auto'
-alias la='ls -a'
+alias ls='lsd --color=auto'
+alias la='lsd -a'
 alias ll='ls -la'
 alias l='ls' 					
 alias l.="ls -A | egrep '^\.'"      
