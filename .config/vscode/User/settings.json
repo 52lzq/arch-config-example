@@ -1,0 +1,79 @@
+{
+    "editor.tabSize": 2,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "'Menlo for Powerline'",
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "*.ejs": "html",
+        "*.json": "jsonc"
+    },
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "search.followSymlinks": false,
+    "minapp-vscode.disableAutoConfig": true,
+    "explorer.confirmDragAndDrop": false,
+    "sync.gist": "c48c99a06041810b32d2954e2e5b74a5",
+    "sync.quietSync": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.rendererType": "dom",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "window.menuBarVisibility": "toggle",
+    "git.enableSmartCommit": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.statusBar.visible": true,
+    "workbench.startupEditor": "welcomePage",
+    "window.zoomLevel": 1,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "python.jediEnabled": false,
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "update.mode": "none",
+    "extensions.autoUpdate": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "npm.fetchOnlinePackageInfo": false,
+    "editor.fontFamily": "'Droid Sans Mono', 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Font Awesome 5 Free Solid'",
+    "sync.forceUpload": true,
+    "sync.code": "4/sAHqewSevM97A6486zyiyoy-_hBJvgxta7N-3Y9LMSz1eHi0QF9GpZY",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.sideBar.location": "left",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "prettier.singleQuote": true,
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.fontSize": 15,
+    "open-in-browser.default": "google-chrome-stable",
+    "prettier.jsxSingleQuote": true,
+}

@@ -1,0 +1,19 @@
+// Empty
+[
+  {
+    "key": "ctrl+k s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "ctrl+alt+x",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.togglePanelPosition"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+  }
+]

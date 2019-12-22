@@ -33,7 +33,8 @@ conky.config = {
 conky.text = [[
   [
     {
-      "full_text": "  ${cpu cpu0}% ",
+      #"full_text": "  ${cpu cpu0}% ",
+      "full_text": " Cpu ${cpu cpu0}% ",
       #"color": "\#fdf6e3",
       "color": "\#a54242",
       "separator": true,
@@ -47,7 +48,8 @@ conky.text = [[
       "separator_block_width": 0
     },
     {
-      "full_text": "  ${mem}/${memmax} (${memperc}%) ",
+      #"full_text": "  ${mem}/${memmax} (${memperc}%) ",
+      "full_text": " Mem ${mem}/${memmax} (${memperc}%) ",
       "color": "\#FFAF00",
       "separator": true,
       "separator_block_width": 0
@@ -60,7 +62,8 @@ conky.text = [[
       "separator_block_width": 0
     },
     {
-      "full_text": "  ${time %H:%M:%S}",
+      #"full_text": "  ${time %H:%M:%S}",
+      "full_text": " Time ${time %H:%M:%S}",
       "color": "\#0099ff",
       "separator": true,
       "separator_block_width": 0

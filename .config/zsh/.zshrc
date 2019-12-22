@@ -3,14 +3,23 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/lizq/.oh-my-zsh"
-export ALL_PROXY=socks5://127.0.0.1:1080
+alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
+alias unsetproxy="unset ALL_PROXY"
+# export ALL_PROXY="http://127.0.0.1:12333"
+# export http_proxy="http://127.0.0.1:12333"
+# export https_proxy="http://127.0.0.1:12333"
+# export http_proxy="localhost:8118"
+# export https_proxy="localhost:8118"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # kennethreitz sorin
-ZSH_THEME="kennethreitz"
+# ZSH_THEME="kennethreitz"
+# zsh_theme="random"
+ZSH_THEME="awesomepanda"
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,7 +79,7 @@ ZSH_THEME="kennethreitz"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions z)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions z jsontools)
 
 source $ZSH/oh-my-zsh.sh
 
